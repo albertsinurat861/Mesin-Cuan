@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mesin Cuan — Academy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- ===== HEADER (SAMA PERSIS) ===== -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.jpg" class="logo-img" />
+      <div class="brand-text">
+        <div class="brand-title">Mesin Cuan</div>
+        <div class="brand-sub">Financial Learning Hub</div>
+      </div>
+    </a>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="academy.html" class="nav-link">Academy</a></li>
+        <li><a href="report.html" class="nav-link">Report</a></li>
+        <li><a href="news.html" class="nav-link">News</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="forum.html" class="nav-link">Forum</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="btn ghost small" href="login.html">Login</a>
+      <a class="btn primary small" href="register.html">Register</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== CONTENT ===== -->
+<main class="page-section">
+  <div class="container">
+
+    <h1 class="section-title">🎓 Academy</h1>
+    <p class="section-subtitle">
+      Materi literasi keuangan tersusun berdasarkan level pembelajaran
+    </p>
+
+    <!-- ===== PROGRESS LEVEL ===== -->
+    <section class="card" style="margin-bottom:32px">
+      <h3 style="margin-bottom:12px;color:var(--accent)">📊 Progress Belajar</h3>
+
+      <p>Level Awam</p>
+      <div style="background:#1c1c1c;border-radius:999px;overflow:hidden">
+        <div style="width:33%;background:linear-gradient(90deg,var(--accent),var(--accent-2));padding:6px 10px;font-size:.8rem;font-weight:600">
+          33%
+        </div>
+      </div>
+
+      <p style="margin-top:10px">Level Menengah</p>
+      <div style="background:#1c1c1c;border-radius:999px;overflow:hidden">
+        <div style="width:0%;background:linear-gradient(90deg,var(--accent),var(--accent-2));padding:6px 10px;font-size:.8rem">
+          0%
+        </div>
+      </div>
+
+      <p style="margin-top:10px">Level Expert</p>
+      <div style="background:#1c1c1c;border-radius:999px;overflow:hidden">
+        <div style="width:0%;background:linear-gradient(90deg,var(--accent),var(--accent-2));padding:6px 10px;font-size:.8rem">
+          0%
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FILTER ===== -->
+    <div class="filter-row">
+      <div class="chip active" data-filter="all">Semua</div>
+      <div class="chip" data-filter="investasi">Investasi</div>
+      <div class="chip" data-filter="saham">Saham</div>
+      <div class="chip" data-filter="reksadana">Reksadana</div>
+      <div class="chip" data-filter="awam">Awam</div>
+      <div class="chip" data-filter="menengah">Menengah</div>
+    </div>
+
+    <!-- ===== PLAYLIST ===== -->
+    <section class="playlist">
+
+      <!-- TEMPLATE ITEM -->
+      <article class="playlist-item card hover-elevate" data-tags="investasi awam">
+        <div class="playlist-meta">
+          <h3>Tujuan & Manfaat Investasi</h3>
+          <p class="meta-desc">Mengapa investasi penting</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 8px">
+  <span class="chip small">✔ Terverifikasi Ahli</span>
+  <span class="chip small">🏷 Wajib Ditonton</span>
+</div>
+          <a class="btn youtube small" href="https://youtu.be/1rIk3wO_8g0" target="_blank">
+            Tonton di YouTube
+          </a>
+        </div>
+      </article>
+
+      <article class="playlist-item card hover-elevate" data-tags="saham awam">
+        <div class="playlist-meta">
+          <h3>Apa Itu Saham?</h3>
+          <p class="meta-desc">Dasar saham bagi pemula</p>
+          <a class="btn youtube small" href="https://youtu.be/mlLoU6IYayI" target="_blank">
+            Tonton di YouTube
+          </a>
+        </div>
+      </article>
+
+      <article class="playlist-item card hover-elevate" data-tags="reksadana awam">
+        <div class="playlist-meta">
+          <h3>Apa Itu Reksadana?</h3>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 8px">
+  <span class="chip small">✔ Terverifikasi Ahli</span>
+  <span class="chip small">🏷 Wajib Ditonton</span>
+</div>
+
+          <p class="meta-desc">Instrumen investasi risiko rendah</p>
+          <a class="btn youtube small" href="https://youtu.be/QVigT2-gAKY" target="_blank">
+            Tonton di YouTube
+          </a>
+        </div>
+      </article>
+
+      <!-- kamu tinggal DUPLIKASI item ini sampai 20 video -->
+    </section>
+    <section class="playlist">
+
+  <!-- ===== VIDEO 1 ===== -->
+  <article class="playlist-item card hover-elevate" data-tags="investasi awam">
+    <div class="playlist-meta">
+      <h3>Apa Itu Investasi?</h3>
+
+      <!-- BADGE DIPISAH -->
+      <div style="margin:6px 0 8px">
+        <span class="chip small">🏷 Wajib Ditonton</span>
+      </div>
+
+      <p class="meta-desc">Pengantar investasi untuk pemula.</p>
+
+      <a class="btn youtube small" href="https://youtu.be/0X_h7KzbHbI" target="_blank">
+        Tonton di YouTube
+      </a>
+    </div>
+  </article>
+
+  <!-- ===== VIDEO 2 ===== -->
+  <article class="playlist-item card hover-elevate" data-tags="investasi awam">
+    <div class="playlist-meta">
+      <h3>Tujuan & Manfaat Investasi</h3>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 8px">
+  <span class="chip small">✔ Terverifikasi Ahli</span>
+  <span class="chip small">🏷 Wajib Ditonton</span>
+</div>
+      <p class="meta-desc">Mengapa investasi penting untuk masa depan.</p>
+      <a class="btn youtube small" href="https://youtu.be/1rIk3wO_8g0" target="_blank">
+        Tonton di YouTube
+      </a>
+    </div>
+  </article>
+
+  <!-- ===== VIDEO 3 ===== -->
+  <article class="playlist-item card hover-elevate" data-tags="investasi awam">
+    <div class="playlist-meta">
+      <h3>Kesalahan Umum Investor Pemula</h3>
+      <div style="margin:6px 0 8px">
+        <span class="chip small">🏷 Wajib Ditonton</span>
+      </div>
+      <p class="meta-desc">Kesalahan fatal yang sering dilakukan pemula.</p>
+      <a class="btn youtube small" href="https://youtu.be/nqvVcZ0f0Xo" target="_blank">
+        Tonton di YouTube
+      </a>
+    </div>
+  </article>
+
+  <!-- ===== VIDEO 4 ===== -->
+  <article class="playlist-item card hover-elevate" data-tags="saham awam">
+    <div class="playlist-meta">
+      <h3>Apa Itu Saham?</h3>
+      <p class="meta-desc">Pengenalan saham untuk pemula.</p>
+      <a class="btn youtube small" href="https://youtu.be/mlLoU6IYayI" target="_blank">
+        Tonton di YouTube
+      </a>
+    </div>
+  </article>
+
+  <!-- ===== VIDEO 5 ===== -->
+  <article class="playlist-item card hover-elevate" data-tags="saham menengah">
+    <div class="playlist-meta">
+      <h3>Risiko & Return Saham</h3>
+      <p class="meta-desc">Memahami hubungan risiko dan keuntungan.</p>
+      <a class="btn youtube small" href="https://youtu.be/VSU4e_ZbzGc" target="_blank">
+        Tonton di YouTube
+      </a>
+    </div>
+  </article>
+
+  <!-- ===== VIDEO 6 ===== -->
+  <article class="playlist-item card hover-elevate" data-tags="saham menengah">
+    <div class="playlist-meta">
+      <h3>Analisis Fundamental Saham</h3>
+      <div style="margin:6px 0 8px">
+        <span class="chip small">🏷 Wajib Ditonton</span>
+      </div>
+      <p class="meta-desc">Menilai saham berdasarkan kinerja perusahaan.</p>
+      <a class="btn youtube small" href="https://youtu.be/MBmUn688FZU" target="_blank">
+        Tonton di YouTube
+      </a>
+    </div>
+  </article>
+
+  <!-- ===== VIDEO 7 ===== -->
+  <article class="playlist-item card hover-elevate" data-tags="reksadana awam">
+    <div class="playlist-meta">
+      <h3>Apa Itu Reksadana?</h3>
+      <p class="meta-desc">Alternatif investasi risiko rendah.</p>
+      <a class="btn youtube small" href="https://youtu.be/QVigT2-gAKY" target="_blank">
+        Tonton di YouTube
+      </a>
+    </div>
+  </article>
+
+  <!-- ===== VIDEO 8 ===== -->
+  <article class="playlist-item card hover-elevate" data-tags="reksadana awam">
+    <div class="playlist-meta">
+      <h3>Jenis-Jenis Reksadana</h3>
+      <p class="meta-desc">Pasar uang, pendapatan tetap, dan saham.</p>
+      <a class="btn youtube small" href="https://youtu.be/aIG_wS8F_4E" target="_blank">
+        Tonton di YouTube
+      </a>
+    </div>
+  </article>
+
+  <!-- ===== VIDEO 9 ===== -->
+  <article class="playlist-item card hover-elevate" data-tags="investasi menengah">
+    <div class="playlist-meta">
+      <h3>Menyusun Portofolio Investasi</h3>
+      <div style="margin:6px 0 8px">
+        <span class="chip small">🏷 Wajib Ditonton</span>
+      </div>
+      <p class="meta-desc">Diversifikasi untuk mengelola risiko.</p>
+      <a class="btn youtube small" href="https://youtu.be/9XREiZu3afI" target="_blank">
+        Tonton di YouTube
+      </a>
+    </div>
+  </article>
+
+  <!-- ===== VIDEO 10–20 ===== -->
+  <!-- Duplikasi struktur di atas (judul + deskripsi berbeda) -->
+  <!-- Link boleh sama sementara (untuk tugas tidak masalah) -->
+
+</section>
+
+  </div>
+</main>
+
+<!-- ===== SCRIPT FILTER ===== -->
+<script>
+const chips = document.querySelectorAll('.chip');
+const items = document.querySelectorAll('.playlist-item');
+
+chips.forEach(chip => {
+  chip.addEventListener('click', () => {
+    chips.forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+
+    const filter = chip.dataset.filter;
+
+    items.forEach(item => {
+      if(filter === 'all' || item.dataset.tags.includes(filter)){
+        item.style.display = '';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>

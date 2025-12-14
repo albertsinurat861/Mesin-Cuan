@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mesin Cuan — Report</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <script defer src="email.js"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.jpg" class="logo-img" alt="logo">
+        <div class="brand-text">
+          <div class="brand-title">Mesin Cuan</div>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="academy.html" class="nav-link">Academy</a></li>
+          <li><a href="report.html" class="nav-link">Report</a></li>
+          <li><a href="news.html" class="nav-link">News</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="forum.html" class="nav-link">Forum</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn ghost" href="login.html">Login</a>
+        <a class="btn primary" href="register.html">Register</a>
+        <button class="nav-toggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="report-section container">
+      <h1>Laporkan Praktik Keuangan Mencurigakan</h1>
+      <p class="lead">Formulir ini digunakan untuk melaporkan dugaan praktik keuangan mencurigakan. Semua laporan akan diterima dan diproses oleh tim <strong>Mesin Cuan</strong> secara rahasia dan profesional.</p>
+
+      <form id="reportForm" class="report-form">
+  <div class="form-row">
+    <label>Nama Pelapor</label>
+    <input type="text" name="nama" placeholder="Nama lengkap (boleh kosong jika anonim)">
+  </div>
+
+  <div class="form-row">
+    <label>Email</label>
+    <input type="email" name="email" placeholder="email@contoh.com">
+  </div>
+
+  <div class="form-row">
+    <label>Jenis Praktik Mencurigakan</label>
+    <select name="jenis">
+      <option>Investasi Bodong</option>
+      <option>Penipuan Transfer</option>
+      <option>Situs Palsu</option>
+      <option>Lainnya</option>
+    </select>
+  </div>
+
+  <div class="form-row">
+    <label>Deskripsi Kejadian</label>
+    <textarea name="deskripsi" rows="6" placeholder="Jelaskan kronologi kejadian..."></textarea>
+  </div>
+
+  <div class="form-row">
+    <label>Bukti Pendukung</label>
+    <input type="text" name="bukti" placeholder="Link atau keterangan bukti pendukung" />
+  </div>
+
+  <div class="form-row">
+    <label>Pihak yang Dicurigai</label>
+    <input type="text" name="pihak" placeholder="Nama, akun, rekening, situs, dll.">
+  </div>
+
+  <div class="form-row">
+    <label>Lokasi/Platform</label>
+    <input type="text" name="lokasi" placeholder="Instagram / WhatsApp / Situs">
+  </div>
+
+  <div class="form-row">
+    <label>Tanggal Kejadian</label>
+    <input type="date" name="tanggal" />
+  </div>
+
+  <div class="form-row">
+  <label>Dampak atau Kerugian</label>
+  <input type="text" name="kerugian" placeholder="Tulis nominal kerugian atau dampak lainnya...">
+  </div>
+
+
+  <div class="form-row checkbox-row">
+    <label><input type="checkbox" name="setuju" required /> Saya menyatakan data di atas benar dan setuju untuk investigasi</label>
+  </div>
+
+  <div class="form-actions">
+    <button type="submit" class="btn primary">Kirim Laporan</button>
+    <button type="reset" class="btn ghost">Reset</button>
+  </div>
+
+  <p id="reportResponse" class="response-msg" aria-live="polite"></p>
+</form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">© 2025 Mesin Cuan</div>
+  </footer>
+</body>
+</html>
