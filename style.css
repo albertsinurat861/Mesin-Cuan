@@ -1,0 +1,211 @@
+:root{
+  --bg:#060606;
+  --panel:#120014;
+  --accent:#a855f7;
+  --accent-2:#7b2cbf;
+  --muted:#c4c4c4;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background:var(--bg);
+  color:#fff;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+
+.container{width:min(1100px,94%);margin:0 auto;padding:18px 0}
+
+.site-header{position:sticky;top:0;z-index:60;background:linear-gradient(90deg, rgba(22,0,24,0.88), rgba(30,0,40,0.88));backdrop-filter: blur(8px);box-shadow:0 6px 24px rgba(0,0,0,0.6)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+.logo-img{width:52px;height:52px;border-radius:8px;object-fit:cover;border:2px solid rgba(255,255,255,0.04)}
+.brand-text .brand-title{font-weight:700;font-size:1.15rem}
+.brand-text .brand-sub{font-size:0.78rem;color:var(--muted);margin-top:-4px}
+
+.main-nav ul{list-style:none;display:flex;gap:18px;align-items:center;margin:0;padding:0}
+.main-nav a{color:#eee;text-decoration:none;padding:8px 10px;border-radius:8px;transition:all .22s ease;display:inline-block}
+.main-nav a:hover{transform:translateY(-3px);color:var(--accent);box-shadow:0 6px 18px rgba(151,82,255,0.08)}
+.main-nav a.active{color:var(--accent);box-shadow:inset 0 -3px 0 var(--accent)}
+
+.nav-actions{display:flex;gap:10px;align-items:center}
+.btn{display:inline-block;padding:8px 12px;border-radius:999px;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:all .15s ease}
+.btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.04)}
+.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#0b0b0b;font-weight:700;box-shadow:0 8px 20px rgba(151,82,255,0.12)}
+.btn.large{padding:12px 20px}
+.btn.small{padding:6px 10px;font-size:.92rem}
+.btn:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(151,82,255,0.12)}
+
+.hero{position:relative;overflow:hidden;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:0}
+.hero-bg{position:absolute;inset:0;background:
+  linear-gradient(rgba(10,0,20,0.6), rgba(0,0,0,0.85)),
+  url('assets/bg.jpg') center/cover no-repeat fixed;z-index:0;filter:brightness(.86)}
+.hero-inner{position:relative;z-index:2;padding:36px}
+.hero-title{font-size:2.2rem;margin:0;color:#fff;line-height:1.05}
+.hero-title span{color:var(--accent)}
+.lead{color:var(--muted);margin-top:12px;max-width:820px;margin-left:auto;margin-right:auto}
+.hero-cta{margin-top:16px;display:flex;gap:12px;justify-content:center}
+
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:28px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);transition:all .25s ease}
+.card h3{margin-bottom:8px}
+.card p{color:var(--muted);font-size:0.95rem}
+.hover-elevate:hover{transform:translateY(-8px) scale(1.01);box-shadow:0 18px 40px rgba(151,82,255,0.08);border-color:rgba(151,82,255,0.12)}
+
+.page-section{padding:60px 0}
+.section-title{font-size:1.9rem;color:var(--accent);margin-bottom:6px}
+.section-subtitle{color:var(--muted);margin-bottom:24px}
+
+.filter-row{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-bottom:28px}
+.chip{background:#18181b;color:#fff;border:1px solid rgba(168,85,247,0.16);padding:10px 18px;border-radius:999px;cursor:pointer;transition:all .18s}
+.chip:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(168,85,247,0.06)}
+.chip.active{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#0b0b0b;border-color:transparent}
+
+.playlist{display:flex;flex-direction:column;gap:26px}
+.playlist-item{display:flex;flex-direction:column;border-radius:12px;overflow:hidden}
+.video-wrap{background:#000}
+.video-wrap iframe{width:100%;height:520px;border:0}
+.playlist-meta{padding:14px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.01))}
+.meta-desc{color:var(--muted)}
+
+.news-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:20px}
+.news-card .excerpt{color:var(--muted);font-size:0.95rem}
+.card-actions{margin-top:auto}
+
+.report-section{padding:28px 0}
+.report-form{max-width:900px;margin:0 auto}
+.report-form .form-row{display:flex;flex-direction:column;margin-bottom:12px}
+.report-form input, .report-form select, .report-form textarea{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:rgba(255,255,255,0.02);color:#fff}
+
+.auth-page{min-height:70vh;display:flex;align-items:center;justify-content:center;padding:40px 0}
+.auth-wrapper{width:100%;display:flex;justify-content:center}
+.auth-card{max-width:420px;padding:26px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);box-shadow:0 20px 60px rgba(0,0,0,0.6);text-align:center}
+.auth-card.glass{backdrop-filter: blur(8px);background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));}
+.auth-logo{width:72px;height:72px;border-radius:10px;margin-bottom:10px}
+.auth-card input{width:100%;padding:10px;margin-bottom:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:rgba(255,255,255,0.02);color:#fff}
+
+.site-footer{margin-top:40px;padding:18px 0;background:linear-gradient(90deg,#0b0010,#160018);color:var(--muted);border-top:1px solid rgba(255,255,255,0.02)}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+
+@media (max-width:900px){
+  .video-wrap iframe{height:240px}
+  .main-nav{display:none}
+  .nav-toggle{display:inline-block}
+  .hero-title{font-size:1.6rem}
+  .playlist-item{width:100%}
+  .container{padding:12px}
+}
+
+.report-section {
+  color: #f5f5f5;
+  background: rgba(20, 20, 30, 0.7);
+  backdrop-filter: blur(8px);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(120, 80, 200, 0.2);
+}
+
+.report-form .form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.report-form label {
+  font-weight: 600;
+  color: #d1c8ff;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.3px;
+}
+
+.report-form input[type="text"],
+.report-form input[type="email"],
+.report-form input[type="url"],
+.report-form input[type="date"],
+.report-form input[type="file"],
+.report-form select,
+.report-form textarea {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid rgba(185, 160, 255, 0.4);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.report-form input:hover,
+.report-form select:hover,
+.report-form textarea:hover {
+  border-color: #a68cff;
+}
+
+.report-form input:focus,
+.report-form select:focus,
+.report-form textarea:focus {
+  border-color: #c9a7ff;
+  box-shadow: 0 0 8px rgba(170, 120, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+
+.report-form .checkbox-row label {
+  color: #dcd5ff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.report-form .btn.primary {
+  background-color: #7b5cff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.4rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.report-form .btn.primary:hover {
+  background-color: #a88eff;
+  transform: translateY(-1px);
+}
+
+.report-form .btn.ghost {
+  background-color: transparent;
+  color: #dcd5ff;
+  border: 1px solid #8c6cff;
+  border-radius: 8px;
+  padding: 0.8rem 1.4rem;
+  transition: 0.3s ease;
+}
+
+.report-form .btn.ghost:hover {
+  background-color: rgba(140, 108, 255, 0.1);
+  color: #fff;
+}
+
+.response-msg {
+  margin-top: 1.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+/* Tombol Tonton YouTube – Academy */
+.btn.youtube{
+  background: linear-gradient(90deg,var(--accent),var(--accent-2));
+  color:#0b0b0b;
+  font-weight:600;
+  border:none;
+}
+
+.btn.youtube:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 30px rgba(168,85,247,0.35);
+}
